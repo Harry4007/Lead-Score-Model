@@ -21,28 +21,25 @@ performance of the model on the testing data.
 
 To built this we follow these steps:
 1. Data Cleaning:
+
 ● Taking care of nan values, we drop those columns that have more than
 15% of nan values and then deal with the other nan values.
-
 ● Dropping the duplicates values.
 
 2. Data Preparation:
+
 ● Converting categorical data into numerical data by creating dummy
 variables.
-
 ● Splitting the dataset into training and testing, 80% as training and
 20% as testing dataset.
 
 3. Model Building:
+
 ● This data is highly imbalanced so we had to undersample the majority
 class.
-
 ● Uses the RFE (Recursive feature Elimination) to select 30 more
 relevant features for the target variable.
-
 ● And, then we use the Random Forest Classifier as an estimator of
 RFE.
-
 ● We got an Accuracy of 75.29% on the training dataset.
-
 ● Also, calculate the other metrics like precision score, recall score.
